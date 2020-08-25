@@ -1,3 +1,7 @@
 def title_case(title)
-  title.capitalize!
+  split_sentence = title.split
+  split_sentence.each do |word|
+    word.capitalize!
+  end
+  split_sentence.join(" ")
 end
